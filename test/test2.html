@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapoff {
+            direction: rtl;
+            width: 200px;
+            border: 2px solid blue;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        #wrapoff:before {
+            content: "...";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: white;
+            padding: 0 0 0 15px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapoff">
+صمر است اکه بره سالده ببر به اینهل زرنگی
+</div>
+</body>
+</html>

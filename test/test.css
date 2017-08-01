@@ -1,0 +1,101 @@
+body{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    min-height: 100%;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+    outline: none !important;
+}
+.carousel__wrapper{
+    padding-bottom: 17px;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.24);
+}
+.carousel__header{
+    padding: 15px;
+    background: #fafafa;
+    text-align: right;
+    font-size: 13px;
+    font-size: .8125rem;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0);}
+
+
+
+.carousel__list{
+    margin: 0 0 -20px;
+    padding: 0 24px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    white-space: nowrap;
+}
+.product{
+    position: relative;
+    margin: 0 0 20px 10px;
+    padding: 0 10px;
+    width: 49vw;
+    background: #fff;
+    text-align: center;
+    color: #333;
+    min-width: 100px;
+}
+.carousel{
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.carousel__item{
+    display: inline-block;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+
+}
+.img{
+    vertical-align: middle;
+}
+.product__image{
+    margin: 20px 0;
+}
+.product__title{
+    position: relative;
+    width: 150px;
+    font-family: Sans-Serif;
+    font-size: 12px;
+    font-size: .75rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.product__title:before {
+    content: "...";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    padding: 0 0 1px 15px;
+}
