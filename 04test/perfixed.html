@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .site-header {
+            padding: 20px;
+            background: #ccc;
+        }
+
+        nav {
+            background: #777;
+            color: #FFF;
+        }
+
+        nav ul {
+            list-style:none;
+            display: block;
+            margin:0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            width: 120px;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px;
+            cursor:pointer;
+        }
+
+        nav ul li a:hover {
+            background: #999;
+        }
+
+        .wrap {
+            width: 100%;
+        }
+
+        #primary-content-wrap {
+            position: relative;
+        }
+
+        .primary-content {
+            width:66.66%;
+            float:left;
+            padding: 10px;
+
+        }
+
+        .primary-content h2 {
+            font-size: 24px;
+        }
+
+        .sidebar {
+            width:33.33%;
+            float:left;
+            padding: 0 10px;
+        }
+
+        .floating-div {
+            background-color: #333;
+            padding: 10px 50px;
+            color:#EEE;
+            font-size: 20px;
+            margin-top:10px;
+
+        }
+
+        footer {
+            text-align: center;
+            clear:both;
+            padding: 20px 60px;
+            background: #CCC;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 10px;
+            right:18px;
+            margin: 0;
+            width:calc(33.33% - 25px);
+        }
+
+        .abs {
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+            width:calc(33.33% - 20px);
+        }
+
+        .clearfix:after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        footer h3 {
+            font-size:24px;
+        }
+        #ball{
+            position: absolute;
+            width: 100px;height: 100px;
+            background: red;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Sending forms with pure AJAX &ndash; MDN</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <!--<script src="a.js"></script>-->
+
+</head>
+<body>
+
+<script>
+    var VENDOR_PREFIXES = ['', 'webkit', 'Moz', 'MS', 'ms', 'o'];
+    function prefixed( property) {
+        var prefix = void 0;
+        var prop = void 0;
+        var style = document.documentElement.style;
+        var camelProp = property[0].toUpperCase() + property.slice(1);
+
+        var i = 0;
+        while (i < VENDOR_PREFIXES.length) {
+            prefix = VENDOR_PREFIXES[i];
+            prop = prefix ? prefix + camelProp : property;
+
+            if (prop in style) {
+                return prop;
+            }
+            i++;
+        }
+        return undefined;
+    }
+  var a =  prefixed('appearance')
+    console.log(a);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
